@@ -8,7 +8,10 @@ import Layout from "../components/layout"
 export default ({ data }) => (
   <Layout>
     <article className="sheet">
-      <HelmetDatoCms seo={data.datoCmsWork.seoMetaTags} />
+      <HelmetDatoCms seo={data.datoCmsWork.seoMetaTags}>
+        <meta name="vf:domain" content="qa5.thestar.com" />
+        <script type="text/javascript" async src="https://cdn.viafoura.net/vf-v2.js"></script>
+      </HelmetDatoCms>
       <div className="sheet__inner">
         <h1 className="sheet__title">{data.datoCmsWork.title}</h1>
         <p className="sheet__lead">{data.datoCmsWork.excerpt}</p>
@@ -29,6 +32,7 @@ export default ({ data }) => (
           <Img fluid={data.datoCmsWork.coverImage.fluid} />
         </div>
       </div>
+      <vf-livestory class="viafoura" vf-container-id="fd594b34149d4243b20ba8830b19e9ec"></vf-livestory>
     </article>
   </Layout>
 )
