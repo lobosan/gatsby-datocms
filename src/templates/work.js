@@ -34,6 +34,7 @@ export default ({ data }) => (
       </div>
       <div className="sheet__inner viafoura">
         <vf-conversations vf-container-id="74"></vf-conversations>
+        <vf-tray-trigger floating="true"></vf-tray-trigger>
       </div>
     </article>
   </Layout>
