@@ -9,7 +9,7 @@ export default ({ data }) => (
   <Layout>
     <article className="sheet">
       <HelmetDatoCms seo={data.datoCmsWork.seoMetaTags}>
-        <meta name="vf:domain" content="qa5.thestar.com" />
+        <meta name="vf:domain" content="vfpolitics.wpengine.com" />
         <script type="text/javascript" async src="https://cdn.viafoura.net/vf-v2.js"></script>
       </HelmetDatoCms>
       <div className="sheet__inner">
@@ -32,7 +32,9 @@ export default ({ data }) => (
           <Img fluid={data.datoCmsWork.coverImage.fluid} />
         </div>
       </div>
-      <vf-livestory class="viafoura" vf-container-id="fd594b34149d4243b20ba8830b19e9ec"></vf-livestory>
+      <div className="sheet__inner viafoura">
+        <vf-conversations vf-container-id="74"></vf-conversations>
+      </div>
     </article>
   </Layout>
 )
