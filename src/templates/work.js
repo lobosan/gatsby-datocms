@@ -10,7 +10,7 @@ export default ({ data }) => (
     <article className="sheet">
       <HelmetDatoCms seo={data.datoCmsWork.seoMetaTags}>
         <meta name="vf:domain" content="vfpolitics.wpengine.com" />
-        <script type="text/javascript" async src="https://cdn.viafoura.net/vf-v2.js"></script>
+        <script type="text/javascript" defer src="//cdn.viafoura.net/vf-v2.js"></script>
       </HelmetDatoCms>
       <div className="sheet__inner">
         <h1 className="sheet__title">{data.datoCmsWork.title}</h1>
